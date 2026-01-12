@@ -1,0 +1,96 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function getUserData() {
+      let path = /databases/$(database)/documents/users/$(request.auth.uid);
+      return exists(path) ? get(path).data : null;
+    }
+    
+    function hasRole(role) {
+      let data = getUserData();
+      return data != null && data.role == role;
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Users collection
+    match /users/{userId} {
+      allow read: if isSignedIn() && (isOwner(userId) || hasRole('admin'));
+      allow create: if isSignedIn() && isOwner(userId);
+      allow update: if isSignedIn() && (isOwner(userId) || hasRole('admin'));
+      allow delete: if hasRole('admin');
+    }
+
+    // Requirements collection
+    match /requirements/{reqId} {
+      allow read: if isSignedIn(); // Suppliers need to see requirements to match
+      allow create: if hasRole('buyer');
+      allow update: if hasRole('buyer') && resource.data.buyerId == request.auth.uid;
+      allow delete: if (hasRole('buyer') && resource.data.buyerId == request.auth.uid) || hasRole('admin');
+
+      // AI Matches subcollection
+      match /supplierMatches/{matchId} {
+        allow read: if isSignedIn() && (get(/databases/$(database)/documents/requirements/$(reqId)).data.buyerId == request.auth.uid || hasRole('admin'));
+        allow write: if hasRole('buyer') && get(/databases/$(database)/documents/requirements/$(reqId)).data.buyerId == request.auth.uid;
+      }
+    }
+
+    // Trades collection
+    match /trades/{tradeId} {
+      allow read: if isSignedIn() && (
+        resource == null ||
+        resource.data.buyerId == request.auth.uid || 
+        resource.data.supplierId == request.auth.uid || 
+        hasRole('admin')
+      );
+      allow create: if isSignedIn() && (
+        request.resource.data.buyerId == request.auth.uid || 
+        request.resource.data.supplierId == request.auth.uid ||
+        hasRole('admin')
+      );
+      allow update: if isSignedIn() && (
+        resource.data.buyerId == request.auth.uid || 
+        resource.data.supplierId == request.auth.uid || 
+        hasRole('admin')
+      );
+      allow delete: if hasRole('admin');
+    }
+
+    // Chats collection
+    match /chats/{chatId} {
+      allow read: if isSignedIn() && request.auth.uid in resource.data.participants;
+      allow create: if isSignedIn();
+      allow update: if isSignedIn() && request.auth.uid in resource.data.participants;
+      
+      // Messages subcollection
+      match /messages/{msgId} {
+        allow read: if isSignedIn() && request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.participants;
+        allow create: if isSignedIn() && request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.participants;
+      }
+    }
+
+    // Categories (Public for reading, Admin for writing)
+    match /categories/{catId} {
+      allow read: if true;
+      allow write: if hasRole('admin');
+    }
+
+    // Partners
+    match /partners/{partnerId} {
+      allow read: if isSignedIn() && (
+        resource.data.buyerId == request.auth.uid || 
+        resource.data.supplierId == request.auth.uid || 
+        hasRole('admin')
+      );
+      allow write: if hasRole('admin');
+    }
+  }
+}

@@ -1,0 +1,26 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Public assets (videos, logos)
+    match /project-specific-assets/{allPaths=**} {
+      allow read: if true;
+      allow write: if false; // Only via Admin SDK / Firebase Console
+    }
+
+    // User documents (ISO certificates, PAN, etc.)
+    match /users/{userId}/{allPaths=**} {
+      allow read: if isSignedIn() && (isOwner(userId) || firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'admin');
+      allow write: if isOwner(userId);
+    }
+  }
+}
