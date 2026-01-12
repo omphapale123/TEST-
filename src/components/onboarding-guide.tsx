@@ -177,7 +177,13 @@ export function OnboardingGuide() {
                         transform: 'translateY(-50%)'
                     }}
                 >
-                    <div className="absolute left-0 top-1/2 -translate-x-full -translate-y-1/2 w-0 h-0 border-y-[10px] border-y-transparent border-r-[15px] border-r-popover" />
+                    {/* Animated Arrow */}
+                    <div className="absolute left-[-12px] top-1/2 -translate-y-1/2 animate-bounce-x">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary drop-shadow-md">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </div>
+
                     <div className="flex justify-between items-start mb-2">
                         <Badge variant="outline" className="text-[10px] font-bold">Step {BUYER_STEPS.indexOf(activeStep) + 1}</Badge>
                         <button onClick={() => setActiveStepId(null)} className="text-muted-foreground hover:text-foreground">
