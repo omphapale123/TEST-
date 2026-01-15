@@ -27,6 +27,19 @@ service cloud.firestore {
       allow create: if isSignedIn() && isOwner(userId);
       allow update: if isSignedIn() && (isOwner(userId) || hasRole('admin'));
       allow delete: if hasRole('admin');
+
+      // Requests subcollection
+      match /requests/{reqId} {
+        allow read: if isSignedIn() && (isOwner(userId) || hasRole('admin'));
+        allow create: if isSignedIn(); // Any user can send a request to a supplier
+        allow update: if isSignedIn() && (isOwner(userId) || hasRole('admin'));
+        allow delete: if isSignedIn() && (isOwner(userId) || hasRole('admin'));
+      }
+    }
+
+    // Collection Group for requests (Admin only)
+    match /{path=**}/requests/{reqId} {
+      allow read: if hasRole('admin');
     }
 
     // Requirements collection
@@ -66,14 +79,14 @@ service cloud.firestore {
 
     // Chats collection
     match /chats/{chatId} {
-      allow read: if isSignedIn() && request.auth.uid in resource.data.participants;
+      allow read: if isSignedIn() && (request.auth.uid in resource.data.participants || hasRole('admin'));
       allow create: if isSignedIn();
-      allow update: if isSignedIn() && request.auth.uid in resource.data.participants;
+      allow update: if isSignedIn() && (request.auth.uid in resource.data.participants || hasRole('admin'));
       
       // Messages subcollection
       match /messages/{msgId} {
-        allow read: if isSignedIn() && request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.participants;
-        allow create: if isSignedIn() && request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.participants;
+        allow read: if isSignedIn() && (request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.participants || hasRole('admin'));
+        allow create: if isSignedIn() && (request.auth.uid in get(/databases/$(database)/documents/chats/$(chatId)).data.participants || hasRole('admin'));
       }
     }
 

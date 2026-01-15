@@ -19,25 +19,26 @@ export function withAuth<P extends object>(
       if (!loading) {
         if (!user) {
           router.replace('/login');
-        } else if (userRole && userRole !== allowedRole) {
+        } else if (userRole && userRole !== allowedRole && userRole !== 'admin') {
           // Redirect to their own dashboard if they try to access another role's page
+          // UNLESS they are an admin, who should have broad access
           router.replace(`/${userRole}`);
         }
       }
     }, [user, userRole, loading, router, allowedRole, verificationStatus]);
 
-    if (loading || !user || !userRole || (allowedRole !== '*' && userRole !== allowedRole)) {
+    if (loading || !user || !userRole || (allowedRole !== '*' && userRole !== allowedRole && userRole !== 'admin')) {
       return (
         <div className="flex h-screen w-full items-center justify-center bg-background">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
         </div>
       );
     }
-    
+
     return <Component {...props} />;
   };
-  
+
   AuthComponent.displayName = `WithAuth(${Component.displayName || Component.name || 'Component'})`;
-  
+
   return AuthComponent;
 }

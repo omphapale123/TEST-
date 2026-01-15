@@ -1,0 +1,1772 @@
+[
+  {
+    "company_name": "Force Motors Ltd",
+    "phone_number": null,
+    "category": "Automotive Parts"
+  },
+  {
+    "company_name": "MS Industrial Components Pvt. Ltd.",
+    "phone_number": "+91-9373906062",
+    "category": "Automotive Parts"
+  },
+  {
+    "company_name": "Panorama Automotive Industries Pvt. Ltd.",
+    "phone_number": "9370279751",
+    "category": "Automotive Parts"
+  },
+  {
+    "company_name": "Thermotek Composite Industries Pvt. Ltd.",
+    "phone_number": "+91 8600018741",
+    "category": "Plastic Injection Molding"
+  },
+  {
+    "company_name": "Maniar Plast",
+    "phone_number": "+91 9689491793",
+    "category": "Plastic Injection Molding"
+  },
+  {
+    "company_name": "Advance Plastic Pvt. Ltd.",
+    "phone_number": "+91 8600018741",
+    "category": "Plastic Injection Molding"
+  },
+  {
+    "company_name": "Electronica Mechatronic Systems (I) Pvt. Ltd.",
+    "phone_number": "+91 20 24229398",
+    "category": "CNC & Metalworking Machines"
+  },
+  {
+    "company_name": "Electronica Plastic Machines Ltd.",
+    "phone_number": "+91 20 66933535",
+    "category": "CNC & Metalworking Machines"
+  },
+  {
+    "company_name": "Greaves Cotton Ltd.",
+    "phone_number": null,
+    "category": "CNC & Metalworking Machines"
+  },
+  {
+    "company_name": "L&T Technology Services",
+    "phone_number": null,
+    "category": "Measuring Instruments"
+  },
+  {
+    "company_name": "ABB Ltd",
+    "phone_number": "+91 20 6710 9999",
+    "category": "Measuring Instruments"
+  },
+  {
+    "company_name": "Siemens Ltd",
+    "phone_number": "+91 20 3051 6000",
+    "category": "Measuring Instruments"
+  },
+  {
+    "company_name": "Decathlon Sports India Pvt. Ltd.",
+    "phone_number": "+91 1800 120 1110",
+    "category": "Sporting Goods"
+  },
+  {
+    "company_name": "Cosco (India) Sports Ltd",
+    "phone_number": null,
+    "category": "Sporting Goods"
+  },
+  {
+    "company_name": "Nivia Sports",
+    "phone_number": null,
+    "category": "Sporting Goods"
+  },
+  {
+    "company_name": "ABB India Ltd",
+    "phone_number": "+91 20 6710 9999",
+    "category": "Control Panels Manufacturing"
+  },
+  {
+    "company_name": "Siemens Ltd",
+    "phone_number": "+91 20 3051 6000",
+    "category": "Control Panels Manufacturing"
+  },
+  {
+    "company_name": "Schneider Electric India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 8000",
+    "category": "Control Panels Manufacturing"
+  },
+  {
+    "company_name": "Heat Treating Technologies Pvt Ltd",
+    "phone_number": "+91 20 2670 2299",
+    "category": "Heat Treatment Services"
+  },
+  {
+    "company_name": "Metallurgical Heat Treatment Pvt Ltd",
+    "phone_number": null,
+    "category": "Heat Treatment Services"
+  },
+  {
+    "company_name": "Thermoquip Heat Treating Pvt Ltd",
+    "phone_number": "+91 98221 66722",
+    "category": "Heat Treatment Services"
+  },
+  {
+    "company_name": "Rubber Mouldings India Pvt. Ltd.",
+    "phone_number": "+91 22 2761 5411",
+    "category": "Rubber Molding Products"
+  },
+  {
+    "company_name": "Precision Rubber Moulders",
+    "phone_number": null,
+    "category": "Rubber Molding Products"
+  },
+  {
+    "company_name": "Kumar Rubber Industries",
+    "phone_number": "+91 22 2583 8970",
+    "category": "Rubber Molding Products"
+  },
+  {
+    "company_name": "Blow Moulding India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Blow Molding Products"
+  },
+  {
+    "company_name": "Plastex Blow Moulders",
+    "phone_number": "+91 22 2589 6765",
+    "category": "Blow Molding Products"
+  },
+  {
+    "company_name": "Moulding & Blowtech Pvt. Ltd.",
+    "phone_number": "+91 98214 55677",
+    "category": "Blow Molding Products"
+  },
+  {
+    "company_name": "Gaskets & Seals India Pvt. Ltd.",
+    "phone_number": "+91 22 2500 1234",
+    "category": "Gaskets & Seals Manufacturing"
+  },
+  {
+    "company_name": "SealTech Engineers",
+    "phone_number": null,
+    "category": "Gaskets & Seals Manufacturing"
+  },
+  {
+    "company_name": "Precision Gaskets Pvt. Ltd.",
+    "phone_number": "+91 20 2671 2345",
+    "category": "Gaskets & Seals Manufacturing"
+  },
+  {
+    "company_name": "Semiconductor Components India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Semiconductor & Electronics Components"
+  },
+  {
+    "company_name": "Bharat Electronics Ltd",
+    "phone_number": "+91 20 2712 1234",
+    "category": "Semiconductor & Electronics Components"
+  },
+  {
+    "company_name": "HCL Electronics Ltd",
+    "phone_number": null,
+    "category": "Semiconductor & Electronics Components"
+  },
+  {
+    "company_name": "Tool & Die India Pvt. Ltd.",
+    "phone_number": "+91 20 2672 1122",
+    "category": "Tool & Die Manufacturing"
+  },
+  {
+    "company_name": "Precision Toolmakers Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Tool & Die Manufacturing"
+  },
+  {
+    "company_name": "Ace Dies & Tools",
+    "phone_number": "+91 98222 33445",
+    "category": "Tool & Die Manufacturing"
+  },
+  {
+    "company_name": "Material Handling Systems India Pvt. Ltd.",
+    "phone_number": "+91 20 2672 3344",
+    "category": "Material Handling Equipment"
+  },
+  {
+    "company_name": "Conveyor Systems India Pvt. Ltd.",
+    "phone_number": "+91 22 2581 1122",
+    "category": "Material Handling Equipment"
+  },
+  {
+    "company_name": "Dynamic Material Handling Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Material Handling Equipment"
+  },
+  {
+    "company_name": "Indian Oil Corporation Ltd. (Lubricants Division)",
+    "phone_number": "+91 20 6610 1234",
+    "category": "Lubricants & Grease Manufacturing"
+  },
+  {
+    "company_name": "Castrol India Ltd",
+    "phone_number": "+91 22 6680 2000",
+    "category": "Lubricants & Grease Manufacturing"
+  },
+  {
+    "company_name": "Shell Lubricants India",
+    "phone_number": null,
+    "category": "Lubricants & Grease Manufacturing"
+  },
+  {
+    "company_name": "IoT Devices India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "IoT Devices Manufacturing"
+  },
+  {
+    "company_name": "SensIoT Technologies",
+    "phone_number": "+91 20 2671 2233",
+    "category": "IoT Devices Manufacturing"
+  },
+  {
+    "company_name": "Edge IoT Solutions Pvt. Ltd.",
+    "phone_number": "+91 97650 11223",
+    "category": "IoT Devices Manufacturing"
+  },
+  {
+    "company_name": "Wearable Innovations Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Wearable Devices Manufacturing"
+  },
+  {
+    "company_name": "Smart Wear Tech Pvt. Ltd.",
+    "phone_number": "+91 20 2672 4455",
+    "category": "Wearable Devices Manufacturing"
+  },
+  {
+    "company_name": "FitTech Devices India",
+    "phone_number": "+91 98220 33444",
+    "category": "Wearable Devices Manufacturing"
+  },
+  {
+    "company_name": "ABB India Ltd",
+    "phone_number": "+91 20 6710 9999",
+    "category": "Electrical Panels Manufacturing"
+  },
+  {
+    "company_name": "Siemens Ltd",
+    "phone_number": "+91 20 3051 6000",
+    "category": "Electrical Panels Manufacturing"
+  },
+  {
+    "company_name": "Schneider Electric India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 8000",
+    "category": "Electrical Panels Manufacturing"
+  },
+  {
+    "company_name": "Industrial Gases India Pvt. Ltd.",
+    "phone_number": "+91 20 2671 9988",
+    "category": "Industrial Gas Manufacturing"
+  },
+  {
+    "company_name": "Linde India Ltd",
+    "phone_number": "+91 22 4039 1000",
+    "category": "Industrial Gas Manufacturing"
+  },
+  {
+    "company_name": "Bharat Gas & Chemicals Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Industrial Gas Manufacturing"
+  },
+  {
+    "company_name": "Audio Systems India Pvt. Ltd.",
+    "phone_number": "+91 20 2671 5566",
+    "category": "Audio Equipment Manufacturing"
+  },
+  {
+    "company_name": "Sonics Audio Pvt. Ltd.",
+    "phone_number": "+91 22 2582 1122",
+    "category": "Audio Equipment Manufacturing"
+  },
+  {
+    "company_name": "Harmony Audio Systems",
+    "phone_number": null,
+    "category": "Audio Equipment Manufacturing"
+  },
+  {
+    "company_name": "Texpro Machinery Pvt. Ltd.",
+    "phone_number": "+91 20 2671 7788",
+    "category": "Textile Machinery"
+  },
+  {
+    "company_name": "WeaveTech Systems",
+    "phone_number": null,
+    "category": "Textile Machinery"
+  },
+  {
+    "company_name": "Shree Textile Machinery Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Textile Machinery"
+  },
+  {
+    "company_name": "Croma Consumer Electronics Pvt. Ltd.",
+    "phone_number": "+91 22 4040 1234",
+    "category": "Consumer Electronics"
+  },
+  {
+    "company_name": "HCL Technologies (Electronics Division)",
+    "phone_number": null,
+    "category": "Consumer Electronics"
+  },
+  {
+    "company_name": "Sony India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 5678",
+    "category": "Consumer Electronics"
+  },
+  {
+    "company_name": "3M India Ltd",
+    "phone_number": "+91 22 2808 2500",
+    "category": "Industrial Safety Equipment"
+  },
+  {
+    "company_name": "Honeywell Automation India Ltd",
+    "phone_number": "+91 20 6602 2000",
+    "category": "Industrial Safety Equipment"
+  },
+  {
+    "company_name": "Ansell India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Industrial Safety Equipment"
+  },
+  {
+    "company_name": "Croma Electronics Pvt. Ltd.",
+    "phone_number": "+91 22 4040 1234",
+    "category": "Electronics & Gadgets"
+  },
+  {
+    "company_name": "Bharat Electronics Ltd",
+    "phone_number": "+91 20 2712 1234",
+    "category": "Electronics & Gadgets"
+  },
+  {
+    "company_name": "HCL Technologies (Electronics Division)",
+    "phone_number": null,
+    "category": "Electronics & Gadgets"
+  },
+  {
+    "company_name": "Precision Components India Pvt. Ltd.",
+    "phone_number": "+91 20 2671 2233",
+    "category": "Precision Components Manufacturing"
+  },
+  {
+    "company_name": "Ace Components Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Precision Components Manufacturing"
+  },
+  {
+    "company_name": "Techno Precision Pvt. Ltd.",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Precision Components Manufacturing"
+  },
+  {
+    "company_name": "Packwell India Pvt. Ltd.",
+    "phone_number": "+91 20 2671 7788",
+    "category": "Protective Packaging Manufacturing"
+  },
+  {
+    "company_name": "Safepack Industries",
+    "phone_number": null,
+    "category": "Protective Packaging Manufacturing"
+  },
+  {
+    "company_name": "ProPack Solutions Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Protective Packaging Manufacturing"
+  },
+  {
+    "company_name": "Asian Paints Ltd",
+    "phone_number": "+91 22 6665 8282",
+    "category": "Paints & Coatings"
+  },
+  {
+    "company_name": "Berger Paints India Ltd",
+    "phone_number": "+91 22 2437 0721",
+    "category": "Paints & Coatings"
+  },
+  {
+    "company_name": "Nerolac Paints Ltd",
+    "phone_number": null,
+    "category": "Paints & Coatings"
+  },
+  {
+    "company_name": "HCL Technologies (IT Hardware Division)",
+    "phone_number": null,
+    "category": "IT Hardware Manufacturing"
+  },
+  {
+    "company_name": "Dell India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 1234",
+    "category": "IT Hardware Manufacturing"
+  },
+  {
+    "company_name": "Lenovo India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 5678",
+    "category": "IT Hardware Manufacturing"
+  },
+  {
+    "company_name": "Bharat Heavy Electricals Ltd (BHEL)",
+    "phone_number": "+91 20 2699 1000",
+    "category": "Power Generation Equipment"
+  },
+  {
+    "company_name": "Kirloskar Electric Co. Ltd.",
+    "phone_number": "+91 20 2685 1122",
+    "category": "Power Generation Equipment"
+  },
+  {
+    "company_name": "Tata Power Solar Systems Ltd",
+    "phone_number": null,
+    "category": "Power Generation Equipment"
+  },
+  {
+    "company_name": "KSB Pumps Ltd",
+    "phone_number": "+91 20 2689 1234",
+    "category": "Pipes, Valves & Fittings"
+  },
+  {
+    "company_name": "Apollo Valves Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Pipes, Valves & Fittings"
+  },
+  {
+    "company_name": "Supreme Valves Pvt. Ltd.",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Pipes, Valves & Fittings"
+  },
+  {
+    "company_name": "Bosch EV Solutions India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 5566",
+    "category": "EV Components Manufacturing"
+  },
+  {
+    "company_name": "Tata AutoComp Systems Ltd",
+    "phone_number": null,
+    "category": "EV Components Manufacturing"
+  },
+  {
+    "company_name": "Exide Industries Ltd (EV Division)",
+    "phone_number": "+91 22 4030 3344",
+    "category": "EV Components Manufacturing"
+  },
+  {
+    "company_name": "ABB India Ltd",
+    "phone_number": "+91 20 6710 9999",
+    "category": "Industrial Automation & Robotics"
+  },
+  {
+    "company_name": "Siemens Ltd",
+    "phone_number": "+91 20 3051 6000",
+    "category": "Industrial Automation & Robotics"
+  },
+  {
+    "company_name": "Schneider Electric India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 8000",
+    "category": "Industrial Automation & Robotics"
+  },
+  {
+    "company_name": "Parle Agro Pvt. Ltd.",
+    "phone_number": "+91 22 4321 4321",
+    "category": "Food & Beverages"
+  },
+  {
+    "company_name": "Britannia Industries Ltd",
+    "phone_number": "+91 22 4323 2323",
+    "category": "Food & Beverages"
+  },
+  {
+    "company_name": "Balaji Wafers Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Food & Beverages"
+  },
+  {
+    "company_name": "Sheet Metal Fabricators Pvt. Ltd.",
+    "phone_number": "+91 20 2671 1122",
+    "category": "Sheet Metal Fabrication"
+  },
+  {
+    "company_name": "Metal Fab India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Sheet Metal Fabrication"
+  },
+  {
+    "company_name": "Precision Sheet Metal Works",
+    "phone_number": "+91 22 2583 7788",
+    "category": "Sheet Metal Fabrication"
+  },
+  {
+    "company_name": "Himalaya Wellness Pvt. Ltd.",
+    "phone_number": "+91 20 2689 1234",
+    "category": "Health & Personal Care"
+  },
+  {
+    "company_name": "Piramal Healthcare Ltd",
+    "phone_number": null,
+    "category": "Health & Personal Care"
+  },
+  {
+    "company_name": "Emami Ltd",
+    "phone_number": "+91 22 6688 1234",
+    "category": "Health & Personal Care"
+  },
+  {
+    "company_name": "HCL Technologies (Server Division)",
+    "phone_number": null,
+    "category": "Computer & Server Manufacturing"
+  },
+  {
+    "company_name": "Dell India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 1234",
+    "category": "Computer & Server Manufacturing"
+  },
+  {
+    "company_name": "Lenovo India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 5678",
+    "category": "Computer & Server Manufacturing"
+  },
+  {
+    "company_name": "Auriga Tools Pvt. Ltd.",
+    "phone_number": "+91 91686 82223",
+    "category": "CNC & Metalworking Machines"
+  },
+  {
+    "company_name": "Greaves Cotton Ltd.",
+    "phone_number": null,
+    "category": "CNC & Metalworking Machines"
+  },
+  {
+    "company_name": "Electronica Mechatronic Systems (I) Pvt. Ltd.",
+    "phone_number": "+91 20 24229398",
+    "category": "CNC & Metalworking Machines"
+  },
+  {
+    "company_name": "John Deere India Pvt. Ltd.",
+    "phone_number": "+91 20 6682 1234",
+    "category": "Agriculture & Farming"
+  },
+  {
+    "company_name": "Mahindra & Mahindra Ltd (Tractors Division)",
+    "phone_number": "+91 20 6682 5678",
+    "category": "Agriculture & Farming"
+  },
+  {
+    "company_name": "Kubota Agricultural Machinery India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Agriculture & Farming"
+  },
+  {
+    "company_name": "Blue Star Ltd (HVAC Division)",
+    "phone_number": "+91 22 6653 1234",
+    "category": "HVAC Systems & Components"
+  },
+  {
+    "company_name": "Voltas Ltd",
+    "phone_number": "+91 22 6667 1234",
+    "category": "HVAC Systems & Components"
+  },
+  {
+    "company_name": "Trane India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "HVAC Systems & Components"
+  },
+  {
+    "company_name": "Tata Steel Ltd",
+    "phone_number": "+91 22 6661 1234",
+    "category": "Metal & Alloys"
+  },
+  {
+    "company_name": "Jindal Stainless Ltd",
+    "phone_number": null,
+    "category": "Metal & Alloys"
+  },
+  {
+    "company_name": "Godawari Power & Ispat Ltd",
+    "phone_number": "+91 20 6682 9988",
+    "category": "Metal & Alloys"
+  },
+  {
+    "company_name": "Forging India Pvt. Ltd.",
+    "phone_number": "+91 20 2671 5566",
+    "category": "Forging Products Manufacturing"
+  },
+  {
+    "company_name": "Precision Forgings Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Forging Products Manufacturing"
+  },
+  {
+    "company_name": "Ace Forging Pvt. Ltd.",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Forging Products Manufacturing"
+  },
+  {
+    "company_name": "Polycab Wires Pvt. Ltd.",
+    "phone_number": "+91 22 6688 7788",
+    "category": "Wire & Cable Products"
+  },
+  {
+    "company_name": "Finolex Cables Ltd",
+    "phone_number": null,
+    "category": "Wire & Cable Products"
+  },
+  {
+    "company_name": "KEI Industries Ltd",
+    "phone_number": "+91 22 2582 1122",
+    "category": "Wire & Cable Products"
+  },
+  {
+    "company_name": "Voltas Ltd (Construction Equipment Division)",
+    "phone_number": "+91 22 6667 1234",
+    "category": "Construction Machinery"
+  },
+  {
+    "company_name": "L&T Construction Equipment",
+    "phone_number": "+91 22 6700 1234",
+    "category": "Construction Machinery"
+  },
+  {
+    "company_name": "JCB India Ltd",
+    "phone_number": null,
+    "category": "Construction Machinery"
+  },
+  {
+    "company_name": "Godrej Interio (Wood Division)",
+    "phone_number": "+91 22 6699 1234",
+    "category": "Wood & Wood Products"
+  },
+  {
+    "company_name": "Century Plyboards (India) Ltd",
+    "phone_number": null,
+    "category": "Wood & Wood Products"
+  },
+  {
+    "company_name": "Kitply Industries Ltd",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Wood & Wood Products"
+  },
+  {
+    "company_name": "HNG Float Glass Ltd",
+    "phone_number": "+91 22 2583 2233",
+    "category": "Glass & Ceramics"
+  },
+  {
+    "company_name": "Asahi India Glass Ltd",
+    "phone_number": null,
+    "category": "Glass & Ceramics"
+  },
+  {
+    "company_name": "Saint-Gobain Glass India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 3344",
+    "category": "Glass & Ceramics"
+  },
+  {
+    "company_name": "Mi India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 5566",
+    "category": "Smart Devices Manufacturing"
+  },
+  {
+    "company_name": "Samsung India Electronics Pvt. Ltd.",
+    "phone_number": "+91 22 4040 1122",
+    "category": "Smart Devices Manufacturing"
+  },
+  {
+    "company_name": "Realme India",
+    "phone_number": null,
+    "category": "Smart Devices Manufacturing"
+  },
+  {
+    "company_name": "TCPL Packaging Ltd",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Flexible Packaging Products"
+  },
+  {
+    "company_name": "Essel Propack Ltd",
+    "phone_number": null,
+    "category": "Flexible Packaging Products"
+  },
+  {
+    "company_name": "Huhtamaki PPL Ltd",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Flexible Packaging Products"
+  },
+  {
+    "company_name": "Bosch Tools India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 7788",
+    "category": "Industrial Tools Manufacturing"
+  },
+  {
+    "company_name": "Stanley Black & Decker India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Industrial Tools Manufacturing"
+  },
+  {
+    "company_name": "Husqvarna Construction Products India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 5566",
+    "category": "Industrial Tools Manufacturing"
+  },
+  {
+    "company_name": "Godrej Interio (Office Furniture)",
+    "phone_number": "+91 22 6699 1234",
+    "category": "Office Furniture Manufacturing"
+  },
+  {
+    "company_name": "Durian Industries Ltd",
+    "phone_number": null,
+    "category": "Office Furniture Manufacturing"
+  },
+  {
+    "company_name": "Nilkamal Ltd",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Office Furniture Manufacturing"
+  },
+  {
+    "company_name": "West Coast Paper Mills Ltd",
+    "phone_number": "+91 20 2689 2233",
+    "category": "Paper & Pulp Products"
+  },
+  {
+    "company_name": "Ballarpur Industries Ltd (BILT)",
+    "phone_number": null,
+    "category": "Paper & Pulp Products"
+  },
+  {
+    "company_name": "JK Paper Ltd",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Paper & Pulp Products"
+  },
+  {
+    "company_name": "Ace Foundry Pvt. Ltd.",
+    "phone_number": "+91 20 2671 7788",
+    "category": "Casting & Foundry Products"
+  },
+  {
+    "company_name": "Precision Foundry Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Casting & Foundry Products"
+  },
+  {
+    "company_name": "Shree Foundry Pvt. Ltd.",
+    "phone_number": "+91 22 2583 8899",
+    "category": "Casting & Foundry Products"
+  },
+  {
+    "company_name": "BASF India Ltd",
+    "phone_number": "+91 22 6688 1234",
+    "category": "Chemicals & Raw Materials"
+  },
+  {
+    "company_name": "Clariant Chemicals India Ltd",
+    "phone_number": null,
+    "category": "Chemicals & Raw Materials"
+  },
+  {
+    "company_name": "Gujarat Alkalies & Chemicals Ltd (Mumbai Branch)",
+    "phone_number": "+91 22 4030 1122",
+    "category": "Chemicals & Raw Materials"
+  },
+  {
+    "company_name": "Larsen & Toubro Shipbuilding Ltd",
+    "phone_number": "+91 22 6699 1122",
+    "category": "Marine & Ship Equipment Manufacturing"
+  },
+  {
+    "company_name": "ABG Shipyard Ltd",
+    "phone_number": null,
+    "category": "Marine & Ship Equipment Manufacturing"
+  },
+  {
+    "company_name": "Mazagon Dock Shipbuilders Ltd",
+    "phone_number": "+91 22 2371 3500",
+    "category": "Marine & Ship Equipment Manufacturing"
+  },
+  {
+    "company_name": "Tata Power Solar EV Charging",
+    "phone_number": "+91 22 4030 5566",
+    "category": "EV Charging Infrastructure"
+  },
+  {
+    "company_name": "Magenta Power Pvt. Ltd.",
+    "phone_number": null,
+    "category": "EV Charging Infrastructure"
+  },
+  {
+    "company_name": "Exicom Tele-Systems Ltd",
+    "phone_number": "+91 20 6682 3344",
+    "category": "EV Charging Infrastructure"
+  },
+  {
+    "company_name": "Blue Star Ltd (Refrigeration Division)",
+    "phone_number": "+91 22 6653 1234",
+    "category": "Industrial Refrigeration & Cooling"
+  },
+  {
+    "company_name": "Emerson Climate Technologies Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Industrial Refrigeration & Cooling"
+  },
+  {
+    "company_name": "Danfoss Industries Pvt. Ltd.",
+    "phone_number": "+91 20 2689 7788",
+    "category": "Industrial Refrigeration & Cooling"
+  },
+  {
+    "company_name": "Kirloskar Electric Co. Ltd.",
+    "phone_number": "+91 20 2685 1122",
+    "category": "Electric Motors Manufacturing"
+  },
+  {
+    "company_name": "Bharat Bijlee Ltd",
+    "phone_number": null,
+    "category": "Electric Motors Manufacturing"
+  },
+  {
+    "company_name": "Siemens Ltd (Motors Division)",
+    "phone_number": "+91 20 3051 6000",
+    "category": "Electric Motors Manufacturing"
+  },
+  {
+    "company_name": "Hindustan Furnaces Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Industrial Furnaces & Kilns"
+  },
+  {
+    "company_name": "Thermax Ltd (Furnace Division)",
+    "phone_number": null,
+    "category": "Industrial Furnaces & Kilns"
+  },
+  {
+    "company_name": "Larsen & Toubro Metal Furnaces",
+    "phone_number": "+91 20 2671 1122",
+    "category": "Industrial Furnaces & Kilns"
+  },
+  {
+    "company_name": "Bharat Electronics Ltd (Aerospace Division)",
+    "phone_number": "+91 20 2712 1234",
+    "category": "Aerospace Components Manufacturing"
+  },
+  {
+    "company_name": "Godrej Aerospace Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Aerospace Components Manufacturing"
+  },
+  {
+    "company_name": "HAL (Hindustan Aeronautics Ltd.) Mumbai Division",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Aerospace Components Manufacturing"
+  },
+  {
+    "company_name": "Texas Instruments India Pvt. Ltd.",
+    "phone_number": "+91 20 2671 2233",
+    "category": "Semiconductor & Electronic Components"
+  },
+  {
+    "company_name": "STMicroelectronics Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Semiconductor & Electronic Components"
+  },
+  {
+    "company_name": "Analog Devices India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 7788",
+    "category": "Semiconductor & Electronic Components"
+  },
+  {
+    "company_name": "Polyplex Corporation Ltd",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Plastics & Polymers"
+  },
+  {
+    "company_name": "Finolex Industries Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Plastics & Polymers"
+  },
+  {
+    "company_name": "Supreme Petrochem Ltd",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Plastics & Polymers"
+  },
+  {
+    "company_name": "Sony Broadcast India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 1234",
+    "category": "Broadcast Equipment Manufacturing"
+  },
+  {
+    "company_name": "Grass Valley India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Broadcast Equipment Manufacturing"
+  },
+  {
+    "company_name": "Imagine Communications India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 3344",
+    "category": "Broadcast Equipment Manufacturing"
+  },
+  {
+    "company_name": "BASF India Ltd",
+    "phone_number": "+91 22 6688 1234",
+    "category": "Specialty Chemical Manufacturing"
+  },
+  {
+    "company_name": "Clariant Chemicals India Ltd",
+    "phone_number": null,
+    "category": "Specialty Chemical Manufacturing"
+  },
+  {
+    "company_name": "Huntsman International India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Specialty Chemical Manufacturing"
+  },
+  {
+    "company_name": "Atlas Copco India Ltd",
+    "phone_number": "+91 20 6627 1000",
+    "category": "Mining Equipment"
+  },
+  {
+    "company_name": "Sandvik Mining & Rock Technology India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Mining Equipment"
+  },
+  {
+    "company_name": "Epiroc India Pvt. Ltd.",
+    "phone_number": "+91 20 6689 1122",
+    "category": "Mining Equipment"
+  },
+  {
+    "company_name": "UltraTech Cement Ltd",
+    "phone_number": "+91 22 6661 1234",
+    "category": "Construction Materials"
+  },
+  {
+    "company_name": "ACC Ltd",
+    "phone_number": null,
+    "category": "Construction Materials"
+  },
+  {
+    "company_name": "Shree Cement Ltd (Maharashtra Branch)",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Construction Materials"
+  },
+  {
+    "company_name": "Plastics Thermoformers Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Thermoforming Products"
+  },
+  {
+    "company_name": "Thermoform Packaging India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Thermoforming Products"
+  },
+  {
+    "company_name": "Omni Thermoforming Pvt. Ltd.",
+    "phone_number": "+91 20 2671 7788",
+    "category": "Thermoforming Products"
+  },
+  {
+    "company_name": "Hidesign Leather Pvt. Ltd.",
+    "phone_number": "+91 22 6688 1122",
+    "category": "Leather Goods"
+  },
+  {
+    "company_name": "Bata India Ltd (Leather Division)",
+    "phone_number": null,
+    "category": "Leather Goods"
+  },
+  {
+    "company_name": "Relaxo Footwears Pvt. Ltd.",
+    "phone_number": "+91 20 2689 5566",
+    "category": "Leather Goods"
+  },
+  {
+    "company_name": "Jaquar Group",
+    "phone_number": "+91 22 6688 3344",
+    "category": "Plumbing & Sanitary Equipment"
+  },
+  {
+    "company_name": "Hindware Ltd",
+    "phone_number": null,
+    "category": "Plumbing & Sanitary Equipment"
+  },
+  {
+    "company_name": "Cera Sanitaryware Ltd",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Plumbing & Sanitary Equipment"
+  },
+  {
+    "company_name": "Siemens Ltd (Power Distribution)",
+    "phone_number": "+91 20 3051 6000",
+    "category": "Power Distribution Equipment"
+  },
+  {
+    "company_name": "ABB India Ltd",
+    "phone_number": "+91 20 6710 9999",
+    "category": "Power Distribution Equipment"
+  },
+  {
+    "company_name": "Schneider Electric India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 8000",
+    "category": "Power Distribution Equipment"
+  },
+  {
+    "company_name": "SKF India Ltd",
+    "phone_number": "+91 20 2689 2233",
+    "category": "Bearings & Mechanical Parts"
+  },
+  {
+    "company_name": "Timken India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Bearings & Mechanical Parts"
+  },
+  {
+    "company_name": "NTN Bearing India Ltd",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Bearings & Mechanical Parts"
+  },
+  {
+    "company_name": "Philips Lighting India Ltd",
+    "phone_number": "+91 22 6688 7788",
+    "category": "Lighting & Fixtures"
+  },
+  {
+    "company_name": "Havells India Ltd (Lighting Division)",
+    "phone_number": null,
+    "category": "Lighting & Fixtures"
+  },
+  {
+    "company_name": "Syska LED Lights Pvt. Ltd.",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Lighting & Fixtures"
+  },
+  {
+    "company_name": "Godrej Appliances Pvt. Ltd.",
+    "phone_number": "+91 22 6699 1122",
+    "category": "Home & Kitchen"
+  },
+  {
+    "company_name": "Elica India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Home & Kitchen"
+  },
+  {
+    "company_name": "Prestige Group (Kitchen Appliances)",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Home & Kitchen"
+  },
+  {
+    "company_name": "3D Spectra Technologies Pvt. Ltd.",
+    "phone_number": "+91 20 2671 7788",
+    "category": "3D Printing & Additive Manufacturing"
+  },
+  {
+    "company_name": "Voxel 3D Printing Pvt. Ltd.",
+    "phone_number": null,
+    "category": "3D Printing & Additive Manufacturing"
+  },
+  {
+    "company_name": "Imaginarium India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "3D Printing & Additive Manufacturing"
+  },
+  {
+    "company_name": "ABB India Ltd (Transformers Division)",
+    "phone_number": "+91 20 6710 9999",
+    "category": "Transformers & Switchgear"
+  },
+  {
+    "company_name": "Siemens Ltd (Switchgear Division)",
+    "phone_number": "+91 20 3051 6000",
+    "category": "Transformers & Switchgear"
+  },
+  {
+    "company_name": "Toshiba India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Transformers & Switchgear"
+  },
+  {
+    "company_name": "Vardhman Textiles Ltd",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Textile Fabrics"
+  },
+  {
+    "company_name": "Alok Industries Ltd",
+    "phone_number": null,
+    "category": "Textile Fabrics"
+  },
+  {
+    "company_name": "Raymond Ltd",
+    "phone_number": "+91 22 6688 1234",
+    "category": "Textile Fabrics"
+  },
+  {
+    "company_name": "TCPL Packaging Ltd",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Industrial Packaging Products"
+  },
+  {
+    "company_name": "Huhtamaki PPL Ltd",
+    "phone_number": null,
+    "category": "Industrial Packaging Products"
+  },
+  {
+    "company_name": "Essel Propack Ltd",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Industrial Packaging Products"
+  },
+  {
+    "company_name": "Tanishq (Titan Company Ltd)",
+    "phone_number": "+91 22 6688 7788",
+    "category": "Jewelry & Accessories"
+  },
+  {
+    "company_name": "PC Jeweller Ltd",
+    "phone_number": null,
+    "category": "Jewelry & Accessories"
+  },
+  {
+    "company_name": "Kalyan Jewellers",
+    "phone_number": "+91 22 4030 1122",
+    "category": "Jewelry & Accessories"
+  },
+  {
+    "company_name": "HILTI India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 5566",
+    "category": "Fasteners & Hardware"
+  },
+  {
+    "company_name": "Fastco Industries Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Fasteners & Hardware"
+  },
+  {
+    "company_name": "SKF Fasteners Pvt. Ltd.",
+    "phone_number": "+91 20 2689 5566",
+    "category": "Fasteners & Hardware"
+  },
+  {
+    "company_name": "Honeywell Automation India Ltd",
+    "phone_number": "+91 20 3051 3344",
+    "category": "Automation Control Devices"
+  },
+  {
+    "company_name": "Siemens India Ltd (Automation Division)",
+    "phone_number": null,
+    "category": "Automation Control Devices"
+  },
+  {
+    "company_name": "Schneider Electric India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 8000",
+    "category": "Automation Control Devices"
+  },
+  {
+    "company_name": "Godrej Interio (Modular Furniture)",
+    "phone_number": "+91 22 6699 1234",
+    "category": "Modular Furniture Manufacturing"
+  },
+  {
+    "company_name": "Durian Industries Ltd",
+    "phone_number": null,
+    "category": "Modular Furniture Manufacturing"
+  },
+  {
+    "company_name": "Nilkamal Ltd",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Modular Furniture Manufacturing"
+  },
+  {
+    "company_name": "Godrej & Boyce Mfg. Co. Ltd.",
+    "phone_number": "+91 22 6699 1122",
+    "category": "Furniture & Interiors"
+  },
+  {
+    "company_name": "Featherlite Furniture Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Furniture & Interiors"
+  },
+  {
+    "company_name": "Evok Furniture Pvt. Ltd.",
+    "phone_number": "+91 20 2689 7788",
+    "category": "Furniture & Interiors"
+  },
+  {
+    "company_name": "Siemens Healthineers India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Medical Equipment"
+  },
+  {
+    "company_name": "GE Healthcare India",
+    "phone_number": null,
+    "category": "Medical Equipment"
+  },
+  {
+    "company_name": "Philips Healthcare India",
+    "phone_number": "+91 22 6688 3344",
+    "category": "Medical Equipment"
+  },
+  {
+    "company_name": "Bühler India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Food Processing Machinery"
+  },
+  {
+    "company_name": "Alfa Laval India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Food Processing Machinery"
+  },
+  {
+    "company_name": "GEA Process Engineering India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 7788",
+    "category": "Food Processing Machinery"
+  },
+  {
+    "company_name": "Ericsson India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 1122",
+    "category": "Telecom Equipment Manufacturing"
+  },
+  {
+    "company_name": "Nokia Solutions & Networks India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Telecom Equipment Manufacturing"
+  },
+  {
+    "company_name": "Huawei Telecommunications India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 3344",
+    "category": "Telecom Equipment Manufacturing"
+  },
+  {
+    "company_name": "Tata Power Solar Systems Ltd.",
+    "phone_number": "+91 22 4030 5566",
+    "category": "Solar Panels & Components"
+  },
+  {
+    "company_name": "Waaree Energies Ltd",
+    "phone_number": null,
+    "category": "Solar Panels & Components"
+  },
+  {
+    "company_name": "Vikram Solar Pvt. Ltd.",
+    "phone_number": "+91 20 2689 7788",
+    "category": "Solar Panels & Components"
+  },
+  {
+    "company_name": "Hindustan Unilever Ltd (Personal Care Division)",
+    "phone_number": "+91 22 6688 3344",
+    "category": "Health & Personal Care"
+  },
+  {
+    "company_name": "Dabur India Ltd",
+    "phone_number": null,
+    "category": "Health & Personal Care"
+  },
+  {
+    "company_name": "Godrej Consumer Products Ltd",
+    "phone_number": "+91 22 6699 5566",
+    "category": "Health & Personal Care"
+  },
+  {
+    "company_name": "Sony India Pvt. Ltd. (Video Equipment Division)",
+    "phone_number": "+91 22 4040 1122",
+    "category": "Video Production Equipment"
+  },
+  {
+    "company_name": "Panasonic India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Video Production Equipment"
+  },
+  {
+    "company_name": "Blackmagic Design India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 3344",
+    "category": "Video Production Equipment"
+  },
+  {
+    "company_name": "Cisco Systems India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 7788",
+    "category": "Networking Equipment Manufacturing"
+  },
+  {
+    "company_name": "Juniper Networks India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Networking Equipment Manufacturing"
+  },
+  {
+    "company_name": "HPE Networking India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Networking Equipment Manufacturing"
+  },
+  {
+    "company_name": "TCPL Packaging Ltd",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Packaging & Printing"
+  },
+  {
+    "company_name": "Huhtamaki PPL Ltd",
+    "phone_number": null,
+    "category": "Packaging & Printing"
+  },
+  {
+    "company_name": "Essel Propack Ltd",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Packaging & Printing"
+  },
+  {
+    "company_name": "Sennheiser India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 5566",
+    "category": "Studio Equipment Manufacturing"
+  },
+  {
+    "company_name": "Yamaha Music India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Studio Equipment Manufacturing"
+  },
+  {
+    "company_name": "Audio-Technica India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 7788",
+    "category": "Studio Equipment Manufacturing"
+  },
+  {
+    "company_name": "Fine Precision India Pvt. Ltd.",
+    "phone_number": "+91 22 6688 1122",
+    "category": "Micro Components Manufacturing"
+  },
+  {
+    "company_name": "Mikro Precision Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Micro Components Manufacturing"
+  },
+  {
+    "company_name": "Precision Micro Components Pvt. Ltd.",
+    "phone_number": "+91 20 2689 5566",
+    "category": "Micro Components Manufacturing"
+  },
+  {
+    "company_name": "Godrej Storage Solutions Pvt. Ltd.",
+    "phone_number": "+91 22 6699 1234",
+    "category": "Industrial Storage Systems"
+  },
+  {
+    "company_name": "SSI Schaefer Systems International Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Industrial Storage Systems"
+  },
+  {
+    "company_name": "SSI India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 7788",
+    "category": "Industrial Storage Systems"
+  },
+  {
+    "company_name": "Thermax Ltd (Boilers Division)",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Industrial Boilers & Steam Systems"
+  },
+  {
+    "company_name": "Babcock Borsig India Ltd",
+    "phone_number": null,
+    "category": "Industrial Boilers & Steam Systems"
+  },
+  {
+    "company_name": "GE Steam Power India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Industrial Boilers & Steam Systems"
+  },
+  {
+    "company_name": "Bata India Ltd",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Footwear"
+  },
+  {
+    "company_name": "Relaxo Footwears Ltd",
+    "phone_number": null,
+    "category": "Footwear"
+  },
+  {
+    "company_name": "Liberty Shoes Ltd",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Footwear"
+  },
+  {
+    "company_name": "Bharat Dynamics Ltd",
+    "phone_number": "+91 22 2583 7788",
+    "category": "Defense Equipment Manufacturing"
+  },
+  {
+    "company_name": "Tata Advanced Systems Ltd",
+    "phone_number": null,
+    "category": "Defense Equipment Manufacturing"
+  },
+  {
+    "company_name": "Larsen & Toubro Defence",
+    "phone_number": "+91 22 6699 1234",
+    "category": "Defense Equipment Manufacturing"
+  },
+  {
+    "company_name": "Komori India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 3344",
+    "category": "Printing Machinery"
+  },
+  {
+    "company_name": "Heidelberg India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Printing Machinery"
+  },
+  {
+    "company_name": "Manroland India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 5566",
+    "category": "Printing Machinery"
+  },
+  {
+    "company_name": "GEA Process Engineering India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Beverage Manufacturing Equipment"
+  },
+  {
+    "company_name": "Alfa Laval India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Beverage Manufacturing Equipment"
+  },
+  {
+    "company_name": "Bühler India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Beverage Manufacturing Equipment"
+  },
+  {
+    "company_name": "Pidilite Industries Ltd",
+    "phone_number": "+91 22 2583 7788",
+    "category": "Adhesives & Sealants"
+  },
+  {
+    "company_name": "Henkel India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Adhesives & Sealants"
+  },
+  {
+    "company_name": "Bostik India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 1122",
+    "category": "Adhesives & Sealants"
+  },
+  {
+    "company_name": "Omni Rotomould Pvt. Ltd.",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Rotational Molding Products"
+  },
+  {
+    "company_name": "Plastiform Rotomould Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Rotational Molding Products"
+  },
+  {
+    "company_name": "Rototech Pvt. Ltd.",
+    "phone_number": "+91 22 4030 5566",
+    "category": "Rotational Molding Products"
+  },
+  {
+    "company_name": "Larsen & Toubro Heavy Fabrication",
+    "phone_number": "+91 22 6699 3344",
+    "category": "Heavy Fabrication"
+  },
+  {
+    "company_name": "Kirloskar Brothers Ltd",
+    "phone_number": null,
+    "category": "Heavy Fabrication"
+  },
+  {
+    "company_name": "Godrej & Boyce Mfg. Co. Ltd.",
+    "phone_number": "+91 22 6699 1122",
+    "category": "Heavy Fabrication"
+  },
+  {
+    "company_name": "Weaving Leather Pvt. Ltd.",
+    "phone_number": "+91 20 2689 5566",
+    "category": "Leather Processing Equipment"
+  },
+  {
+    "company_name": "Om Leather Processing Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Leather Processing Equipment"
+  },
+  {
+    "company_name": "Leathertech India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 7788",
+    "category": "Leather Processing Equipment"
+  },
+  {
+    "company_name": "Foxconn India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 3344",
+    "category": "Consumer Electronics Assembly"
+  },
+  {
+    "company_name": "Jabil India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Consumer Electronics Assembly"
+  },
+  {
+    "company_name": "Flextronics Technologies India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Consumer Electronics Assembly"
+  },
+  {
+    "company_name": "Polycab Rubber Products Pvt. Ltd.",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Rubber Products"
+  },
+  {
+    "company_name": "Goodyear India Ltd",
+    "phone_number": null,
+    "category": "Rubber Products"
+  },
+  {
+    "company_name": "Bridgestone India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Rubber Products"
+  },
+  {
+    "company_name": "Bharat Forge Ltd",
+    "phone_number": "+91 22 2583 5566",
+    "category": "Machinery & Tools"
+  },
+  {
+    "company_name": "Kirloskar Brothers Ltd",
+    "phone_number": null,
+    "category": "Machinery & Tools"
+  },
+  {
+    "company_name": "Larsen & Toubro Ltd",
+    "phone_number": "+91 22 6699 3344",
+    "category": "Machinery & Tools"
+  },
+  {
+    "company_name": "Raymond Ltd",
+    "phone_number": "+91 22 6688 1234",
+    "category": "Apparel & Textiles"
+  },
+  {
+    "company_name": "Vardhman Textiles Ltd",
+    "phone_number": null,
+    "category": "Apparel & Textiles"
+  },
+  {
+    "company_name": "Alok Industries Ltd",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Apparel & Textiles"
+  },
+  {
+    "company_name": "Funskool India Ltd",
+    "phone_number": "+91 22 4040 1122",
+    "category": "Toys & Sports Equipment"
+  },
+  {
+    "company_name": "Playwell Toys Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Toys & Sports Equipment"
+  },
+  {
+    "company_name": "Faber-Castell India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 3344",
+    "category": "Toys & Sports Equipment"
+  },
+  {
+    "company_name": "Foam India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 5566",
+    "category": "Foam & Sponge Products"
+  },
+  {
+    "company_name": "Super Foam Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Foam & Sponge Products"
+  },
+  {
+    "company_name": "Foamtech India Pvt. Ltd.",
+    "phone_number": "+91 22 4030 7788",
+    "category": "Foam & Sponge Products"
+  },
+  {
+    "company_name": "Jindal Steel & Power Ltd",
+    "phone_number": "+91 22 2583 7788",
+    "category": "Metals & Alloys"
+  },
+  {
+    "company_name": "Tata Steel Ltd",
+    "phone_number": null,
+    "category": "Metals & Alloys"
+  },
+  {
+    "company_name": "JSW Steel Ltd",
+    "phone_number": "+91 22 6688 3344",
+    "category": "Metals & Alloys"
+  },
+  {
+    "company_name": "ABB India Ltd (Power Electronics)",
+    "phone_number": "+91 20 6710 9999",
+    "category": "Power Electronics Manufacturing"
+  },
+  {
+    "company_name": "Siemens India Ltd (Power Electronics)",
+    "phone_number": null,
+    "category": "Power Electronics Manufacturing"
+  },
+  {
+    "company_name": "Schneider Electric India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 8000",
+    "category": "Power Electronics Manufacturing"
+  },
+  {
+    "company_name": "Exide Industries Ltd",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Battery Packs Manufacturing"
+  },
+  {
+    "company_name": "Amara Raja Batteries Ltd",
+    "phone_number": null,
+    "category": "Battery Packs Manufacturing"
+  },
+  {
+    "company_name": "Okaya Power Pvt. Ltd.",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Battery Packs Manufacturing"
+  },
+  {
+    "company_name": "TCPL Packaging Ltd",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Packaging Machinery"
+  },
+  {
+    "company_name": "Huhtamaki PPL Ltd",
+    "phone_number": null,
+    "category": "Packaging Machinery"
+  },
+  {
+    "company_name": "Essel Propack Ltd",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Packaging Machinery"
+  },
+  {
+    "company_name": "ABB India Ltd (Electrical Division)",
+    "phone_number": "+91 20 6710 9999",
+    "category": "Electrical Equipment"
+  },
+  {
+    "company_name": "Siemens India Ltd (Electrical)",
+    "phone_number": null,
+    "category": "Electrical Equipment"
+  },
+  {
+    "company_name": "Schneider Electric India Pvt. Ltd.",
+    "phone_number": "+91 22 4040 8000",
+    "category": "Electrical Equipment"
+  },
+  {
+    "company_name": "Honeywell Automation India Ltd",
+    "phone_number": "+91 20 3051 3344",
+    "category": "Industrial Sensors Manufacturing"
+  },
+  {
+    "company_name": "Omron Electronics India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Industrial Sensors Manufacturing"
+  },
+  {
+    "company_name": "Siemens Ltd (Sensors Division)",
+    "phone_number": "+91 22 4030 5566",
+    "category": "Industrial Sensors Manufacturing"
+  },
+  {
+    "company_name": "Tata Power Solar Systems Ltd.",
+    "phone_number": "+91 22 4030 5566",
+    "category": "Renewable Energy Equipment"
+  },
+  {
+    "company_name": "Waaree Energies Ltd",
+    "phone_number": null,
+    "category": "Renewable Energy Equipment"
+  },
+  {
+    "company_name": "Vikram Solar Pvt. Ltd.",
+    "phone_number": "+91 20 2689 7788",
+    "category": "Renewable Energy Equipment"
+  },
+  {
+    "company_name": "Ballarpur Industries Ltd",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Paper, Pulp & Packaging Materials"
+  },
+  {
+    "company_name": "JK Paper Ltd",
+    "phone_number": null,
+    "category": "Paper, Pulp & Packaging Materials"
+  },
+  {
+    "company_name": "West Coast Paper Mills Ltd",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Paper, Pulp & Packaging Materials"
+  },
+  {
+    "company_name": "Exide Industries Ltd",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Batteries & Energy Storage"
+  },
+  {
+    "company_name": "Amara Raja Batteries Ltd",
+    "phone_number": null,
+    "category": "Batteries & Energy Storage"
+  },
+  {
+    "company_name": "Okaya Power Pvt. Ltd.",
+    "phone_number": "+91 20 2689 3344",
+    "category": "Batteries & Energy Storage"
+  },
+  {
+    "company_name": "Castrol India Ltd",
+    "phone_number": "+91 22 2583 7788",
+    "category": "Industrial Lubricants & Oils"
+  },
+  {
+    "company_name": "Shell India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Industrial Lubricants & Oils"
+  },
+  {
+    "company_name": "Reliance Industrial Lubricants",
+    "phone_number": "+91 22 4030 3344",
+    "category": "Industrial Lubricants & Oils"
+  },
+  {
+    "company_name": "Siemens Ltd (Automation Division)",
+    "phone_number": "+91 22 4030 5566",
+    "category": "Industrial Automation"
+  },
+  {
+    "company_name": "ABB India Ltd (Automation)",
+    "phone_number": null,
+    "category": "Industrial Automation"
+  },
+  {
+    "company_name": "Honeywell Automation India Ltd",
+    "phone_number": "+91 20 3051 3344",
+    "category": "Industrial Automation"
+  },
+  {
+    "company_name": "Stanley Black & Decker India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 1122",
+    "category": "Hand Tools Manufacturing"
+  },
+  {
+    "company_name": "Bosch Power Tools India Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Hand Tools Manufacturing"
+  },
+  {
+    "company_name": "Hindustan Toolworks Pvt. Ltd.",
+    "phone_number": "+91 22 4030 7788",
+    "category": "Hand Tools Manufacturing"
+  },
+  {
+    "company_name": "Kennametal India Pvt. Ltd.",
+    "phone_number": "+91 22 2583 3344",
+    "category": "Cutting Tools Manufacturing"
+  },
+  {
+    "company_name": "Sandvik Asia Pvt. Ltd.",
+    "phone_number": null,
+    "category": "Cutting Tools Manufacturing"
+  },
+  {
+    "company_name": "ISCAR Tools India Pvt. Ltd.",
+    "phone_number": "+91 20 2689 1122",
+    "category": "Cutting Tools Manufacturing"
+  }
+]

@@ -18,7 +18,7 @@ export default function LandingPage() {
           <Logo className="text-white text-2xl" />
         </div>
         <div className="flex-1 flex flex-col justify-center">
-          <h1 className="text-6xl font-bold leading-tight">OffshoreBrucke</h1>
+          <h1 className="text-6xl font-bold leading-tight">OffshoreBrücke</h1>
           <p className="text-xl text-muted-foreground mt-4 max-w-md">
             We make global expansion more reliable, accessible and profitable.
           </p>
@@ -34,11 +34,11 @@ export default function LandingPage() {
       </div>
       <div className="flex-1 bg-black hidden lg:flex items-center justify-center relative overflow-hidden">
         <Image
-            src="https://storage.googleapis.com/firebase-studio-app-bucket/project-specific-assets/offshore-bridge/containers-dark.png"
-            alt="Bridge Illustration"
-            width={800}
-            height={600}
-            className="object-contain"
+          src="https://storage.googleapis.com/firebase-studio-app-bucket/project-specific-assets/offshore-bridge/containers-dark.png"
+          alt="Bridge Illustration"
+          width={800}
+          height={600}
+          className="object-contain"
         />
       </div>
     </div>

@@ -36,7 +36,7 @@ import { useToast } from '@/hooks/use-toast';
 import { Skeleton } from '@/components/ui/skeleton';
 import { cn } from '@/lib/utils';
 import { findMatchingSuppliers } from '@/ai/flows/supplier-matching-flow';
-import { addDocumentNonBlocking } from '@/firebase/non-blocking-updates';
+import { addDocumentNonBlocking, setDocumentNonBlocking } from '@/firebase/non-blocking-updates';
 
 export default function FindSuppliersPage({ params }: { params: Promise<{ requirementId: string }> }) {
     const { requirementId } = React.use(params);
@@ -222,6 +222,22 @@ function FindSuppliersClient({ requirementId }: ClientPageProps) {
 
         setSendingRequestId(supplierId);
         try {
+            // 1. Record the request for Admin oversight (and supplier notifications)
+            const supplierRequestsRef = doc(firestore, 'users', supplierId, 'requests', `${user.uid}_${Date.now()}`);
+            await setDocumentNonBlocking(supplierRequestsRef, {
+                requirementId: requirementId,
+                requirementTitle: requirement.title,
+                buyerId: user.uid,
+                buyerName: user.displayName || 'Buyer',
+                supplierId: supplierId,
+                supplierName: finalSupplierName,
+                status: 'pending',
+                createdAt: serverTimestamp(),
+                isMockSupplier: supplierId.startsWith('mock_'),
+                source: 'find_suppliers_ai'
+            }, {});
+
+            // 2. Create the chat
             const chatsColRef = collection(firestore, 'chats');
             const chatDoc = {
                 requirementId: requirementId,

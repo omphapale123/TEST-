@@ -102,7 +102,7 @@ export async function findMatchingSuppliers(input: MatchingSuppliersInput): Prom
 
     // 3. Call AI
     const response = await callOpenRouterWithReasoning({
-      model: 'nvidia/nemotron-nano-12b-v2-vl:free',
+      model: 'deepseek/deepseek-r1-0528:free',
       messages: [
         { role: 'user', content: prompt }
       ],
@@ -115,16 +115,45 @@ export async function findMatchingSuppliers(input: MatchingSuppliersInput): Prom
     }
 
     let content = response.choices[0].message.content || '';
-    console.log('AI Raw Output:', content);
 
-    // Clean up markdown code blocks if present
-    content = content.replace(/```json\n?|\n?```/g, '').trim();
+    // Check if content is empty but reasoning is present (some models do this)
+    if (!content && response.choices[0].message.reasoning) {
+      console.log('Content empty but reasoning found, checking reasoning for JSON...');
+      content = response.choices[0].message.reasoning;
+    }
 
-    const parsed = JSON.parse(content);
-    const validated = MatchingSuppliersOutputSchema.parse(parsed);
+    console.log('AI Raw Output Length:', content.length);
+    if (content.length > 0) {
+      console.log('AI Raw Output (first 200 chars):', content.substring(0, 200));
+    }
 
-    console.log(`AI returned ${validated.matches.length} matches.`);
-    return validated;
+    if (!content) {
+      console.error('AI returned empty content and empty reasoning.');
+      return { matches: [] };
+    }
+
+    // Clean up: find the first { and last } to extract JSON if it's buried in text/think tags
+    const firstBrace = content.indexOf('{');
+    const lastBrace = content.lastIndexOf('}');
+
+    if (firstBrace === -1 || lastBrace === -1 || lastBrace < firstBrace) {
+      console.error('Could not find JSON object in AI response.');
+      return { matches: [] };
+    }
+
+    content = content.substring(firstBrace, lastBrace + 1);
+
+    try {
+      const parsed = JSON.parse(content);
+      const validated = MatchingSuppliersOutputSchema.parse(parsed);
+
+      console.log(`AI returned ${validated.matches.length} matches.`);
+      return validated;
+    } catch (parseError) {
+      console.error('Failed to parse AI JSON:', parseError);
+      console.log('Fragment that failed:', content);
+      return { matches: [] };
+    }
 
   } catch (error) {
     console.error('Error in findMatchingSuppliers:', error);

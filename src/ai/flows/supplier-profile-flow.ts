@@ -1,8 +1,10 @@
 'use server';
 
 import { z } from 'zod';
-import { callOpenRouterWithReasoning } from '@/lib/openrouter-reasoning';
+import { callOpenRouterWithReasoning, AI_MODEL } from '@/lib/openrouter-reasoning';
 import { getActiveCategories } from '@/lib/categories';
+
+
 
 const ExtractCategoriesInputSchema = z.object({
     text: z.string().describe("The supplier's company description or extracted catalog text."),
@@ -58,7 +60,7 @@ export async function extractSupplierCategories(input: ExtractCategoriesInput): 
 
         console.log('Calling OpenRouter (Reasoning)...');
         const response = await callOpenRouterWithReasoning({
-            model: 'nvidia/nemotron-nano-12b-v2-vl:free',
+            model: AI_MODEL,
             messages: [{ role: 'user', content: prompt }],
             reasoning: { enabled: true }
         });

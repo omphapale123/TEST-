@@ -268,10 +268,11 @@ function AdminUsersPage() {
     }
 
     const renderTable = (data: User[], allCategories: Category[] | null) => {
-        const filteredData = data.filter(u =>
-            u.companyName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            u.email.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+        const filteredData = data.filter(u => {
+            const companyMatch = (u.companyName || '').toLowerCase().includes(searchTerm.toLowerCase());
+            const emailMatch = (u.email || '').toLowerCase().includes(searchTerm.toLowerCase());
+            return companyMatch || emailMatch;
+        });
 
         const isLoading = isLoadingUsers || isLoadingCategories;
 

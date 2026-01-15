@@ -1,7 +1,7 @@
 'use server';
 
 import { z } from 'zod';
-import { callOpenRouterWithReasoning } from '@/lib/openrouter-reasoning';
+import { callOpenRouterWithReasoning, AI_MODEL } from '@/lib/openrouter-reasoning';
 import { getActiveCategories } from '@/lib/categories';
 import * as pdfjs from 'pdfjs-dist';
 
@@ -224,7 +224,7 @@ IMPORTANT: Return ONLY the JSON object.
 
         console.log('Calling OpenRouter (Reasoning)...');
         const extractionResponse = await callOpenRouterWithReasoning({
-            model: 'deepseek/deepseek-r1',
+            model: AI_MODEL,
             messages: [{ role: 'user', content: extractionPrompt }],
             reasoning: { enabled: true }
         });

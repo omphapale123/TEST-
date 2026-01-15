@@ -20,7 +20,8 @@ import {
   Store,
   FilePlus,
   ArrowRight,
-  ShieldCheck
+  ShieldCheck,
+  ClipboardList
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -67,6 +68,8 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
     { href: '/admin/verify-documents', icon: CheckCircle, label: 'Verify Documents', roles: ['admin'] },
     { href: '/admin/trades', icon: Repeat, label: 'Trades', roles: ['admin'] },
     { href: '/admin/invoice-creation', icon: FilePlus, label: 'Invoice Creation', roles: ['admin'] },
+    { href: '/admin/requirements', icon: ClipboardList, label: 'Buyers Requirements', roles: ['admin'] },
+    { href: '/admin/chats', icon: MessageSquare, label: 'User Chats', roles: ['admin'] },
     // Buyer
     { href: `/buyer/requirements`, icon: FileText, label: 'Requirements', roles: ['buyer'] },
     { href: '/buyer/marketplace', icon: Store, label: 'Marketplace', roles: ['buyer'] },

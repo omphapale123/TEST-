@@ -1,10 +1,9 @@
-
 {
   "entities": {
     "User": {
       "title": "User",
       "type": "object",
-      "description": "Represents a user within the OffshoreBrucke application. This entity holds profile information for all user roles (buyer, supplier, admin).",
+      "description": "Represents a user within the OffshoreBrücke application. This entity holds profile information for all user roles (buyer, supplier, admin).",
       "properties": {
         "id": {
           "type": "string",
@@ -22,59 +21,67 @@
         "role": {
           "type": "string",
           "description": "Role of the user, used for authorization.",
-          "enum": ["buyer", "supplier", "admin"]
+          "enum": [
+            "buyer",
+            "supplier",
+            "admin"
+          ]
         },
         "fullName": {
-            "type": "string",
-            "description": "The user's full name."
+          "type": "string",
+          "description": "The user's full name."
         },
         "companyName": {
-            "type": "string",
-            "description": "The user's company name."
+          "type": "string",
+          "description": "The user's company name."
         },
         "contactNumber": {
-            "type": "string",
-            "description": "The user's contact phone number."
+          "type": "string",
+          "description": "The user's contact phone number."
         },
         "verificationStatus": {
-            "type": "string",
-            "description": "The status of the user's document verification.",
-            "enum": ["unverified", "pending", "verified"]
+          "type": "string",
+          "description": "The status of the user's document verification.",
+          "enum": [
+            "unverified",
+            "pending",
+            "verified"
+          ]
         },
         "hrbNumber": {
-            "type": "string",
-            "description": "The user's HRA/HRB number (for German buyers)."
+          "type": "string",
+          "description": "The user's HRA/HRB number (for German buyers)."
         },
         "gstNumber": {
-            "type": "string",
-            "description": "The supplier's GST number (for Indian suppliers)."
+          "type": "string",
+          "description": "The supplier's GST number (for Indian suppliers)."
         },
         "panNumber": {
-            "type": "string",
-            "description": "The supplier's PAN number (for Indian suppliers)."
+          "type": "string",
+          "description": "The supplier's PAN number (for Indian suppliers)."
         },
         "udyamNumber": {
-            "type": "string",
-            "description": "The supplier's Udyam registration number (for Indian suppliers)."
+          "type": "string",
+          "description": "The supplier's Udyam registration number (for Indian suppliers)."
         },
         "isoCertificate": {
-            "type": "string",
-            "description": "Path or URL to the supplier's ISO certificate document."
+          "type": "string",
+          "description": "Path or URL to the supplier's ISO certificate document."
         },
         "tuvCertificate": {
-            "type": "string",
-            "description": "Path or URL to the supplier's TUV certificate document."
+          "type": "string",
+          "description": "Path or URL to the supplier's TUV certificate document."
         },
         "companyDescription": {
-            "type": "string",
-            "description": "A detailed description of the supplier's company."
+          "type": "string",
+          "description": "A detailed description of the supplier's company."
         },
         "specializedCategories": {
-            "type": "array",
-            "description": "A list of product categories the supplier specializes in.",
-            "items": {
-                "type": "string"
-            }
+          "type": "array",
+          "description": "A list of product categories the supplier specializes in.",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "required": [
@@ -145,66 +152,78 @@
       ]
     },
     "Chat": {
-        "title": "Chat",
-        "type": "object",
-        "description": "Represents a chat session between a buyer and a supplier.",
-        "properties": {
-            "requirementId": {
-                "type": "string",
-                "description": "The ID of the requirement this chat is about."
-            },
-            "buyerId": {
-                "type": "string",
-                "description": "The UID of the buyer in the chat."
-            },
-            "supplierId": {
-                "type": "string",
-                "description": "The UID of the supplier in the chat."
-            },
-            "participants": {
-                "type": "array",
-                "description": "An array containing the UIDs of both the buyer and the supplier.",
-                "items": { "type": "string" }
-            },
-            "createdAt": {
-                "type": "string",
-                "format": "date-time"
-            },
-            "lastMessage": {
-                "type": "string",
-                "description": "The text of the last message sent in the chat, for display in chat lists."
-            },
-            "lastUpdatedAt": {
-                "type": "string",
-                "format": "date-time",
-                "description": "Timestamp of the last message to enable sorting."
-            },
-            "supplierName": {
-                "type": "string",
-                "description": "The name of the supplier company for display purposes."
-            }
+      "title": "Chat",
+      "type": "object",
+      "description": "Represents a chat session between a buyer and a supplier.",
+      "properties": {
+        "requirementId": {
+          "type": "string",
+          "description": "The ID of the requirement this chat is about."
         },
-        "required": ["requirementId", "buyerId", "supplierId", "participants", "createdAt"]
+        "buyerId": {
+          "type": "string",
+          "description": "The UID of the buyer in the chat."
+        },
+        "supplierId": {
+          "type": "string",
+          "description": "The UID of the supplier in the chat."
+        },
+        "participants": {
+          "type": "array",
+          "description": "An array containing the UIDs of both the buyer and the supplier.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "lastMessage": {
+          "type": "string",
+          "description": "The text of the last message sent in the chat, for display in chat lists."
+        },
+        "lastUpdatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the last message to enable sorting."
+        },
+        "supplierName": {
+          "type": "string",
+          "description": "The name of the supplier company for display purposes."
+        }
+      },
+      "required": [
+        "requirementId",
+        "buyerId",
+        "supplierId",
+        "participants",
+        "createdAt"
+      ]
     },
     "Message": {
-        "title": "Message",
-        "type": "object",
-        "description": "Represents a single message within a chat.",
-        "properties": {
-            "senderId": {
-                "type": "string",
-                "description": "The UID of the user who sent the message."
-            },
-            "text": {
-                "type": "string",
-                "description": "The content of the message."
-            },
-            "createdAt": {
-                "type": "string",
-                "format": "date-time"
-            }
+      "title": "Message",
+      "type": "object",
+      "description": "Represents a single message within a chat.",
+      "properties": {
+        "senderId": {
+          "type": "string",
+          "description": "The UID of the user who sent the message."
         },
-        "required": ["senderId", "text", "createdAt"]
+        "text": {
+          "type": "string",
+          "description": "The content of the message."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "senderId",
+        "text",
+        "createdAt"
+      ]
     },
     "Category": {
       "title": "Category",
@@ -220,61 +239,120 @@
           "description": "A human-readable label for the category (e.g., 'Industrial Machinery')."
         },
         "active": {
-            "type": "boolean",
-            "description": "Whether the category is currently active and can be selected."
+          "type": "boolean",
+          "description": "Whether the category is currently active and can be selected."
         }
       },
-      "required": ["name", "label", "active"]
+      "required": [
+        "name",
+        "label",
+        "active"
+      ]
     },
     "ContactSubmission": {
-        "title": "Contact Submission",
-        "type": "object",
-        "description": "Represents a contact form submission from a user.",
-        "properties": {
-            "name": { "type": "string" },
-            "email": { "type": "string", "format": "email" },
-            "contactNumber": { "type": "string" },
-            "subject": { "type": "string" },
-            "message": { "type": "string" },
-            "userId": { "type": "string" },
-            "createdAt": { "type": "string", "format": "date-time" }
+      "title": "Contact Submission",
+      "type": "object",
+      "description": "Represents a contact form submission from a user.",
+      "properties": {
+        "name": {
+          "type": "string"
         },
-        "required": ["name", "email", "subject", "message"]
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "contactNumber": {
+          "type": "string"
+        },
+        "subject": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "name",
+        "email",
+        "subject",
+        "message"
+      ]
     },
     "Trade": {
       "title": "Trade",
       "type": "object",
       "description": "Represents a finalized trade between a buyer and a supplier.",
       "properties": {
-        "buyerId": { "type": "string" },
-        "supplierId": { "type": "string" },
-        "requirementId": { "type": "string" },
-        "requirementTitle": { "type": "string" },
-        "buyerName": { "type": "string" },
-        "supplierName": { "type": "string" },
-        "value": { "type": "number" },
+        "buyerId": {
+          "type": "string"
+        },
+        "supplierId": {
+          "type": "string"
+        },
+        "requirementId": {
+          "type": "string"
+        },
+        "requirementTitle": {
+          "type": "string"
+        },
+        "buyerName": {
+          "type": "string"
+        },
+        "supplierName": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
         "status": {
           "type": "string",
-          "enum": ["Ongoing", "Pending", "Finished", "Dispatched", "Delivered"]
+          "enum": [
+            "Ongoing",
+            "Pending",
+            "Finished",
+            "Dispatched",
+            "Delivered"
+          ]
         },
-        "initiated": { "type": "string", "format": "date-time" },
+        "initiated": {
+          "type": "string",
+          "format": "date-time"
+        },
         "invoiceStatus": {
-            "type": "string",
-            "enum": ["pending", "submitted", "approved"]
+          "type": "string",
+          "enum": [
+            "pending",
+            "submitted",
+            "approved"
+          ]
         },
         "shippingDocsStatus": {
-            "type": "string",
-            "enum": ["pending", "submitted"]
+          "type": "string",
+          "enum": [
+            "pending",
+            "submitted"
+          ]
         },
         "shippingInfo": {
-            "type": "object",
-            "properties": {
-                "trackingId": { "type": "string" },
-                "carrier": { "type": "string" }
+          "type": "object",
+          "properties": {
+            "trackingId": {
+              "type": "string"
+            },
+            "carrier": {
+              "type": "string"
             }
+          }
         },
         "processedForCommission": {
-            "type": "boolean"
+          "type": "boolean"
         }
       },
       "required": [
@@ -295,10 +373,14 @@
       "anonymous"
     ],
     "claims": {
-        "role": {
-            "type": "string",
-            "enum": ["buyer", "supplier", "admin"]
-        }
+      "role": {
+        "type": "string",
+        "enum": [
+          "buyer",
+          "supplier",
+          "admin"
+        ]
+      }
     }
   },
   "firestore": {
@@ -315,34 +397,34 @@
       "description": "Stores buyer product requirements."
     },
     "/chats/{chatId}": {
-        "schema": {
-            "$ref": "#/entities/Chat"
-        },
-        "description": "Stores metadata for a single chat session."
+      "schema": {
+        "$ref": "#/entities/Chat"
+      },
+      "description": "Stores metadata for a single chat session."
     },
     "/chats/{chatId}/messages/{messageId}": {
-        "schema": {
-            "$ref": "#/entities/Message"
-        },
-        "description": "Stores all messages within a specific chat."
+      "schema": {
+        "$ref": "#/entities/Message"
+      },
+      "description": "Stores all messages within a specific chat."
     },
     "/categories/{categoryId}": {
-        "schema": {
-            "$ref": "#/entities/Category"
-        },
-        "description": "Stores product categories for requirements."
+      "schema": {
+        "$ref": "#/entities/Category"
+      },
+      "description": "Stores product categories for requirements."
     },
     "/contactSubmissions/{submissionId}": {
-        "schema": {
-            "$ref": "#/entities/ContactSubmission"
-        },
-        "description": "Stores messages sent via the contact form."
+      "schema": {
+        "$ref": "#/entities/ContactSubmission"
+      },
+      "description": "Stores messages sent via the contact form."
     },
     "/trades/{tradeId}": {
-        "schema": {
-            "$ref": "#/entities/Trade"
-        },
-        "description": "Stores finalized trades for tracking and revenue calculation."
+      "schema": {
+        "$ref": "#/entities/Trade"
+      },
+      "description": "Stores finalized trades for tracking and revenue calculation."
     }
   }
 }

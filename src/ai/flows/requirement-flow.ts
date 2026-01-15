@@ -2,6 +2,7 @@
 
 import { z } from 'zod';
 import { getActiveCategories } from '@/lib/categories';
+import { callOpenRouterWithReasoning, AI_MODEL } from '@/lib/openrouter-reasoning';
 
 const RequirementDetailsInputSchema = z.object({
   text: z.string().describe("The user's conversational input describing their product need."),
@@ -62,13 +63,21 @@ export async function extractRequirementDetails(
     IMPORTANT: Return ONLY the JSON object. Do not wrap it in markdown code blocks like \`\`\`json.
     `;
 
-    const messages = [
-      { role: 'user' as const, content: prompt }
+    const messages: any[] = [
+      {
+        role: 'user',
+        content: input.image
+          ? [
+            { type: 'text', text: prompt },
+            { type: 'image_url', image_url: { url: input.image } }
+          ]
+          : prompt
+      }
     ];
 
     console.log('Calling OpenRouter (Reasoning)...');
     const response = await callOpenRouterWithReasoning({
-      model: 'nvidia/nemotron-nano-12b-v2-vl:free',
+      model: AI_MODEL,
       messages: messages,
       reasoning: { enabled: true }
     });

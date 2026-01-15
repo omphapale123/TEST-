@@ -16,13 +16,13 @@ import { useUser, useFirestore, addDocumentNonBlocking, useCollection, useMemoFi
 import { collection, serverTimestamp, query, where, doc, getDoc } from 'firebase/firestore';
 import { useAuth } from '@/hooks/use-auth';
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-  DialogFooter,
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+    DialogFooter,
 } from '@/components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
@@ -66,7 +66,7 @@ function BuyerMarketplacePage() {
         return collection(firestore, 'categories');
     }, [firestore]);
     const { data: categories, isLoading: isLoadingCategories } = useCollection<Category>(categoriesQuery);
-    
+
     const requirementsQuery = useMemoFirebase(() => {
         if (!firestore || !buyerUser) return null;
         return query(collection(firestore, 'requirements'), where('buyerId', '==', buyerUser.uid), where('status', '==', 'submitted'));
@@ -81,15 +81,24 @@ function BuyerMarketplacePage() {
     const filteredSuppliers = useMemo(() => {
         if (!suppliers) return [];
         const lowercasedFilter = searchTerm.toLowerCase();
-        
+
         if (!lowercasedFilter) return suppliers;
 
         return suppliers.filter(s =>
-                (s.companyName && s.companyName.toLowerCase().includes(lowercasedFilter)) ||
-                (s.companyDescription && s.companyDescription.toLowerCase().includes(lowercasedFilter)) ||
-                (s.specializedCategories && s.specializedCategories.some(catId => categoryMap.get(catId)?.toLowerCase().includes(lowercasedFilter)))
-            );
+            (s.companyName && s.companyName.toLowerCase().includes(lowercasedFilter)) ||
+            (s.companyDescription && s.companyDescription.toLowerCase().includes(lowercasedFilter)) ||
+            (s.specializedCategories && s.specializedCategories.some(catId => categoryMap.get(catId)?.toLowerCase().includes(lowercasedFilter)))
+        );
     }, [searchTerm, suppliers, categoryMap]);
+
+    const maskName = (name: string) => {
+        if (!name) return "";
+        const parts = name.split(' ');
+        return parts.map(part => {
+            if (part.length <= 1) return part;
+            return part[0] + '*'.repeat(part.length - 1);
+        }).join(' ');
+    };
 
     const getTrustScore = (supplierId: string) => {
         let hash = 0;
@@ -120,16 +129,21 @@ function BuyerMarketplacePage() {
             }
 
             const supplierRequestsRef = doc(firestore, 'users', supplier.id, 'requests', `${buyerUser.uid}_${Date.now()}`);
-            
+
+            const requirement = requirements?.find(r => r.id === selectedRequirementId);
+
             await setDocumentNonBlocking(supplierRequestsRef, {
-                requirementId: 'general_inquiry',
-                requirementTitle: 'General Inquiry from Marketplace',
+                requirementId: selectedRequirementId || 'general_inquiry',
+                requirementTitle: requirement?.title || 'General Inquiry from Marketplace',
                 buyerId: buyerUser.uid,
-                buyerName: buyerName, 
+                buyerName: buyerName,
+                supplierId: supplier.id,
+                supplierName: supplier.companyName,
                 status: 'pending',
                 createdAt: serverTimestamp(),
+                isMockSupplier: supplier.id.startsWith('mock_'),
             }, {});
-            
+
             toast({
                 title: 'Request Sent!',
                 description: `Your request has been sent to the supplier. They will be able to see your company name and can start a chat.`,
@@ -165,8 +179,8 @@ function BuyerMarketplacePage() {
         <DashboardLayout>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <h1 className="text-lg font-semibold md:text-2xl">Supplier Marketplace</h1>
-                 <div className="flex items-center gap-2">
-                     <Dialog>
+                <div className="flex items-center gap-2">
+                    <Dialog>
                         <DialogTrigger asChild>
                             <Button variant="outline">
                                 <Sparkles className="mr-2 h-4 w-4" />
@@ -219,7 +233,7 @@ function BuyerMarketplacePage() {
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
                     </div>
-                 </div>
+                </div>
             </div>
             <Card>
                 <CardHeader>
@@ -228,7 +242,7 @@ function BuyerMarketplacePage() {
                 </CardHeader>
                 <CardContent className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {isLoading ? (
-                         <div className="col-span-full flex justify-center items-center h-40">
+                        <div className="col-span-full flex justify-center items-center h-40">
                             <Loader2 className="h-8 w-8 animate-spin text-primary" />
                         </div>
                     ) : filteredSuppliers.length > 0 ? (
@@ -239,13 +253,16 @@ function BuyerMarketplacePage() {
                                 <Card key={supplier.id} className="flex flex-col">
                                     <CardHeader>
                                         <CardTitle className="flex items-start justify-between">
-                                            <span className="flex items-center gap-2"><Building className="h-5 w-5 text-primary" />{`Supplier (ID: ${supplier.id.substring(0,4).toUpperCase()})`}</span>
+                                            <span className="flex items-center gap-2">
+                                                <Building className="h-5 w-5 text-primary" />
+                                                {supplier.companyName ? maskName(supplier.companyName) : `Supplier #${supplier.id.substring(0, 4).toUpperCase()}`}
+                                            </span>
                                             <Badge className="bg-accent hover:bg-accent/90 text-accent-foreground border-yellow-500/50">
                                                 <CheckCircle className="mr-1 h-3 w-3" />
                                                 Verified
                                             </Badge>
                                         </CardTitle>
-                                         <CardDescription>ID: {supplier.id.substring(0, 8).toUpperCase()}</CardDescription>
+                                        <CardDescription>Indian Supplier</CardDescription>
                                     </CardHeader>
                                     <CardContent className="flex-grow space-y-4">
                                         <p className="text-sm text-muted-foreground line-clamp-2">{supplier.companyDescription || "No description provided."}</p>
@@ -299,4 +316,3 @@ function BuyerMarketplacePage() {
 
 export default withAuth(BuyerMarketplacePage, 'buyer');
 
-    

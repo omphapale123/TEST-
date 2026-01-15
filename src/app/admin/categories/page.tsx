@@ -39,13 +39,13 @@ import { useToast } from '@/hooks/use-toast';
 import { Textarea } from '@/components/ui/textarea';
 import { useAuth } from '@/hooks/use-auth';
 import {
-    useFirestore,
-    useCollection,
-    useMemoFirebase,
-    addDocumentNonBlocking,
-    updateDocumentNonBlocking,
-    deleteDocumentNonBlocking,
-  } from '@/firebase';
+  useFirestore,
+  useCollection,
+  useMemoFirebase,
+  addDocumentNonBlocking,
+  updateDocumentNonBlocking,
+  deleteDocumentNonBlocking,
+} from '@/firebase';
 import { doc } from 'firebase/firestore';
 
 const formSchema = z.object({
@@ -64,6 +64,7 @@ function CategoriesContent() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isBulkImporting, setIsBulkImporting] = useState(false);
   const [jsonInput, setJsonInput] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const categoriesQuery = useMemoFirebase(() => {
     if (!firestore) return null;
@@ -71,6 +72,16 @@ function CategoriesContent() {
   }, [firestore]);
 
   const { data: categories, isLoading, refetch } = useCollection(categoriesQuery);
+
+  const filteredCategories = useMemo(() => {
+    if (!categories) return [];
+    if (!searchQuery.trim()) return categories;
+    const query = searchQuery.toLowerCase();
+    return categories.filter(cat =>
+      cat.label.toLowerCase().includes(query) ||
+      cat.name.toLowerCase().includes(query)
+    );
+  }, [categories, searchQuery]);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -86,7 +97,7 @@ function CategoriesContent() {
 
     const newCategory = { ...values, active: true };
     await addDocumentNonBlocking(collection(firestore, 'categories'), newCategory);
-    
+
     toast({
       title: 'Category Added',
       description: `Category "${values.label}" has been successfully created.`,
@@ -99,38 +110,38 @@ function CategoriesContent() {
     if (!firestore) return;
     setIsBulkImporting(true);
     try {
-        const parsedJson = JSON.parse(jsonInput);
-        const validationResult = bulkImportSchema.safeParse(parsedJson);
+      const parsedJson = JSON.parse(jsonInput);
+      const validationResult = bulkImportSchema.safeParse(parsedJson);
 
-        if (!validationResult.success) {
-            toast({
-                variant: "destructive",
-                title: "Invalid JSON format",
-                description: "Please provide an array of objects with 'name' and 'label' properties.",
-            });
-            setIsBulkImporting(false);
-            return;
-        }
-
-        const categoriesCollection = collection(firestore, 'categories');
-        for (const cat of validationResult.data) {
-            await addDocumentNonBlocking(categoriesCollection, { ...cat, active: true });
-        }
-
+      if (!validationResult.success) {
         toast({
-            title: "Bulk Import Successful",
-            description: `${validationResult.data.length} categories have been imported.`,
+          variant: "destructive",
+          title: "Invalid JSON format",
+          description: "Please provide an array of objects with 'name' and 'label' properties.",
         });
-        setJsonInput('');
+        setIsBulkImporting(false);
+        return;
+      }
+
+      const categoriesCollection = collection(firestore, 'categories');
+      for (const cat of validationResult.data) {
+        await addDocumentNonBlocking(categoriesCollection, { ...cat, active: true });
+      }
+
+      toast({
+        title: "Bulk Import Successful",
+        description: `${validationResult.data.length} categories have been imported.`,
+      });
+      setJsonInput('');
 
     } catch (error) {
-        toast({
-            variant: "destructive",
-            title: "Import Failed",
-            description: "Could not import categories. Check the JSON format.",
-        });
+      toast({
+        variant: "destructive",
+        title: "Import Failed",
+        description: "Could not import categories. Check the JSON format.",
+      });
     } finally {
-        setIsBulkImporting(false);
+      setIsBulkImporting(false);
     }
   }
 
@@ -138,22 +149,22 @@ function CategoriesContent() {
     if (!firestore) return;
     const categoryRef = doc(firestore, 'categories', categoryId);
     await updateDocumentNonBlocking(categoryRef, { active: !currentStatus });
-    
+
     toast({
-        title: `Category ${!currentStatus ? 'Activated' : 'Deactivated'}`,
-        description: `The category has been updated.`,
+      title: `Category ${!currentStatus ? 'Activated' : 'Deactivated'}`,
+      description: `The category has been updated.`,
     });
   }
 
   async function deleteCategory(categoryId: string, categoryLabel: string) {
     if (!firestore) return;
     if (confirm(`Are you sure you want to delete the category "${categoryLabel}"? This cannot be undone.`)) {
-        const categoryRef = doc(firestore, 'categories', categoryId);
-        await deleteDocumentNonBlocking(categoryRef);
-        toast({
-            title: 'Category Deleted',
-            description: `Category "${categoryLabel}" has been removed.`,
-        });
+      const categoryRef = doc(firestore, 'categories', categoryId);
+      await deleteDocumentNonBlocking(categoryRef);
+      toast({
+        title: 'Category Deleted',
+        description: `Category "${categoryLabel}" has been removed.`,
+      });
     }
   }
 
@@ -184,7 +195,7 @@ function CategoriesContent() {
                     </FormItem>
                   )}
                 />
-                 <FormField
+                <FormField
                   control={form.control}
                   name="name"
                   render={({ field }) => (
@@ -207,23 +218,23 @@ function CategoriesContent() {
         </Card>
 
         <Card>
-            <CardHeader>
-                <CardTitle>Bulk Import from JSON</CardTitle>
-                <CardDescription>Paste a JSON array of categories to import them all at once.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-                 <Textarea
-                    placeholder='[{"label": "Textiles & Apparel", "name": "textiles_apparel"}, ...]'
-                    className="min-h-[150px] font-mono text-xs"
-                    value={jsonInput}
-                    onChange={(e) => setJsonInput(e.target.value)}
-                    disabled={isBulkImporting}
-                />
-                <Button onClick={handleBulkImport} disabled={isBulkImporting || !jsonInput.trim()}>
-                    {isBulkImporting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                    Import Categories
-                </Button>
-            </CardContent>
+          <CardHeader>
+            <CardTitle>Bulk Import from JSON</CardTitle>
+            <CardDescription>Paste a JSON array of categories to import them all at once.</CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <Textarea
+              placeholder='[{"label": "Textiles & Apparel", "name": "textiles_apparel"}, ...]'
+              className="min-h-[150px] font-mono text-xs"
+              value={jsonInput}
+              onChange={(e) => setJsonInput(e.target.value)}
+              disabled={isBulkImporting}
+            />
+            <Button onClick={handleBulkImport} disabled={isBulkImporting || !jsonInput.trim()}>
+              {isBulkImporting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              Import Categories
+            </Button>
+          </CardContent>
         </Card>
 
         <Card className="lg:col-span-3">
@@ -232,6 +243,14 @@ function CategoriesContent() {
             <CardDescription>View and manage all product categories.</CardDescription>
           </CardHeader>
           <CardContent>
+            <div className="mb-4">
+              <Input
+                placeholder="Search categories by name or label..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="max-w-sm"
+              />
+            </div>
             {isLoading ? (
               <div className="flex justify-center items-center h-40">
                 <Loader2 className="h-8 w-8 animate-spin text-primary" />
@@ -246,7 +265,7 @@ function CategoriesContent() {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {categories?.map((cat) => (
+                  {filteredCategories?.map((cat) => (
                     <TableRow key={cat.id}>
                       <TableCell className="font-medium">{cat.label}</TableCell>
                       <TableCell>
@@ -269,8 +288,10 @@ function CategoriesContent() {
                 </TableBody>
               </Table>
             )}
-            {!isLoading && categories?.length === 0 && (
-                <p className='text-center text-muted-foreground py-4'>No categories found.</p>
+            {!isLoading && filteredCategories.length === 0 && (
+              <p className='text-center text-muted-foreground py-4'>
+                {searchQuery ? `No categories found matching "${searchQuery}"` : 'No categories found.'}
+              </p>
             )}
           </CardContent>
         </Card>
@@ -280,22 +301,22 @@ function CategoriesContent() {
 }
 
 function CategoriesPage() {
-    const { userRole, loading: isAuthLoading } = useAuth();
-    if (isAuthLoading) {
-      return (
-        <DashboardLayout>
-          <div className="flex justify-center items-center h-full">
-            <Loader2 className="h-8 w-8 animate-spin" />
-          </div>
-        </DashboardLayout>
-      );
-    }
-  
-    if (userRole !== 'admin') {
-      return <DashboardLayout><div>Unauthorized</div></DashboardLayout>;
-    }
-  
-    return <CategoriesContent />;
+  const { userRole, loading: isAuthLoading } = useAuth();
+  if (isAuthLoading) {
+    return (
+      <DashboardLayout>
+        <div className="flex justify-center items-center h-full">
+          <Loader2 className="h-8 w-8 animate-spin" />
+        </div>
+      </DashboardLayout>
+    );
+  }
+
+  if (userRole !== 'admin') {
+    return <DashboardLayout><div>Unauthorized</div></DashboardLayout>;
+  }
+
+  return <CategoriesContent />;
 }
 
 export default withAuth(CategoriesPage, 'admin');

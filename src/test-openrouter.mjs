@@ -19,6 +19,8 @@ function loadEnv() {
 
 const key = loadEnv();
 
+
+
 async function testOpenRouter() {
     console.log('Testing OpenRouter connection...');
 
@@ -28,6 +30,32 @@ async function testOpenRouter() {
     }
 
     try {
+        const prompt = `
+    You are an expert at parsing product requirements from conversational text. Extract the details from the user's input.
+
+    User input: I need 5000 units of blue ballpoint pens delivered to Germany. Target price 0.50 Euro.
+
+    Infer the destination country as Germany unless specified otherwise. 
+
+    STRICT CATEGORY MAPPING:
+    You MUST choose the most relevant category from this list: [Office Supplies, Industrial, Electronics, Other].
+    If the requirement does not clearly fit into any of these categories, you MUST use "Other".
+    Do NOT invent new categories.
+
+    Return the output as a valid JSON object matching this schema:
+    {
+      "title": "string",
+      "productCategory": "string",
+      "quantity": number,
+      "targetPrice": number,
+      "destinationCountry": "string",
+      "description": "string"
+    }
+    
+    IMPORTANT: Return ONLY the JSON object. Do not wrap it in markdown code blocks like \`\`\`json.
+    `;
+
+        console.log('Sending complex prompt to OpenRouter...');
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
             headers: {
@@ -41,22 +69,32 @@ async function testOpenRouter() {
                 messages: [
                     {
                         role: "user",
-                        content: "What is the meaning of life?"
+                        content: prompt
                     }
                 ]
             })
         });
 
         const data = await response.json();
-        console.log('OpenRouter Response Status:', response.status);
 
         if (data.choices && data.choices.length > 0) {
-            console.log('\nAI Answer:');
-            console.log(data.choices[0].message.content);
+            let content = data.choices[0].message.content;
+            console.log('\nAI Raw Output:');
+            console.log(content);
+
+            // Simulation of app logic
+            const cleaned = content.replace(/```json\n?|\n?```/g, '').trim();
+            try {
+                const parsed = JSON.parse(cleaned);
+                console.log('\nSUCCESS: Parsed JSON:');
+                console.log(JSON.stringify(parsed, null, 2));
+            } catch (e) {
+                console.error('\nFAIL: Could not parse JSON:', e.message);
+            }
         } else {
-            console.log('OpenRouter Response Payload:');
-            console.log(JSON.stringify(data, null, 2));
+            console.error('No choices returned:', JSON.stringify(data, null, 2));
         }
+
     } catch (error) {
         console.error('Test failed:', error);
     }

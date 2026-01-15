@@ -7,7 +7,7 @@ const Logo = ({ className }: { className?: string }) => (
       className
     )}
   >
-    OffshoreBrucke
+    OffshoreBrücke
   </div>
 );
 
